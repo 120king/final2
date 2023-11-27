@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Irish+Grover&family=Libre+Bodoni&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Libre+Bodoni&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    background-color:  #3d3d3d;
+}  
+body::-webkit-scrollbar-track{
+    background-color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+nav .logo img{
+    position: absolute;
+    margin-left: -25%;
+    margin-top: -3%;
+    height: 90px;
+}
+nav .Heading{
+    position: relative;
+    list-style: none;
+    display: flex; 
+    margin-left: -25%;
+}
+nav .Heading li a{
+    position: relative;
+    display: grid;
+    white-space: nowrap;
+    justify-content: space-evenly;
+    line-height: 80px;
+    color: rgb(6, 0, 0);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 100%;
+    height: 8px;
+    background: black;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform .3s;
+}
+nav ul li a :hover a::after{
+    transform: scale(.5);
+}
+nav ul li a:hover{
+    color:  #ffec00;
+}
+.part1 .button{
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    margin-top: 80%;
+    margin-left: -98%;
+    border-radius: 12px;
+    border:1.5px solid  #ffec00;
+    background-color:  #ffec00;
+    font-family: 'Lato', sans-serif;
+    font-style: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+.part1{
+    width: 100%;
+    height: 108vh;
+    background: url(main/picture3.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.part1 .title{
+    position: absolute;
+    white-space: nowrap;
+    font-size: 50px;
+    margin-top: -0%;
+}
+.part1 .title span{
+    position: absolute;
+    font-size: 5rem;
+    transform: translateX(-30%);
+    white-space: pre;
+    font-family: 'Libre Bodoni', serif;
+    color: #fff;
+}
+@media  screen and (max-width:450px){
+    .part1{
+        width: 100%;
+        height: 108vh;
+        background: url(main/picture4.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .part1 .title{
+       
+    }
+    .part1 .title span{
+        position: absolute;
+        font-size: 2.5rem;
+    }
+}
